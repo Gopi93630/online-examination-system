@@ -1,25 +1,25 @@
+<!-- register.html -->
 <!DOCTYPE html>
 <html>
 <head>
 <title>Register</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="center">
 
-<h2>User Registration</h2>
+<div class="form-box">
+<h2>Create Account</h2>
 
-<form action="backend/register.php" method="POST">
-
-<input type="text" name="name" placeholder="Name" required>
-
+<form action="../backend/register.php" method="POST">
+<input type="text" name="name" placeholder="Full Name" required>
 <input type="email" name="email" placeholder="Email" required>
-
 <input type="password" name="password" placeholder="Password" required>
 
 <button type="submit">Register</button>
-
 </form>
+
+</div>
 
 </body>
 </html>

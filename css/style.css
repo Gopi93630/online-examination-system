@@ -1,42 +1,191 @@
 body{
-font-family:Arial;
-background:#f4f4f4;
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f5f7fa;
+}
+
+/* Navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0a2540;
+color:white;
+
+}
+
+
+.navbar a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+.logo{
+font-size:22px;
+}
+
+/* Hero */
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0077cc,#00c6ff);
+color:white;
 text-align:center;
 }
 
-header{
-background:#003366;
+.hero h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+/* Buttons */
+.btn{
+background:white;
+color:#0077cc;
+padding:12px 25px;
+margin:10px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+.btn-outline{
+border:2px solid white;
+padding:10px 25px;
 color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* Features */
+.features{
+display:flex;
+justify-content:center;
+gap:30px;
+padding:50px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+/* Footer */
+footer{
+background:#0a2540;
+color:white;
+text-align:center;
 padding:15px;
 }
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
+body{
+margin:0;
+font-family:sans-serif;
+background:#eef2f7;
 }
 
-.hero{
-padding:80px;
+/* Center */
+.center{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
 
-.btn{
+/* Form */
+.form-box{
+background:white;
+padding:30px;
+width:300px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.form-box input{
+width:100%;
+padding:10px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+/* Button */
+button, .btn{
 background:#0077cc;
 color:white;
+border:none;
 padding:10px 20px;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
 text-decoration:none;
+display:inline-block;
 }
 
-form{
+/* Navbar */
+.navbar{
+background:#0a2540;
+color:white;
+padding:15px;
+display:flex;
+justify-content:space-between;
+}
+
+/* Dashboard */
+.dashboard{
+padding:40px;
+text-align:center;
+}
+
+.card-container{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+/* Cards */
+.card{
 background:white;
-width:300px;
-margin:auto;
+
 padding:20px;
-box-shadow:0 0 10px gray;
+width:200px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-input{
-width:90%;
-padding:8px;
-margin:5px;
+/* Exam */
+.exam-box{
+max-width:500px;
+margin:100px auto;
+padding:30px;
+background:white;
+border-radius:10px;
+text-align:center;
+}
+
+.options button{
+display:block;
+width:100%;
+margin:10px 0;
 }

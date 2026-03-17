@@ -1,31 +1,28 @@
+<!-- exam.html -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>TNPSC Mock Test</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Exam</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="../js/script.js"></script>
 </head>
 
 <body>
 
-<h2>Mock Test</h2>
+<div class="exam-box">
 
-<form action="backend/submit_exam.php" method="POST">
+<h2>TNPSC Mock Test</h2>
 
-<p>1. Capital of Tamil Nadu?</p>
+<p id="question">1. Capital of Tamil Nadu?</p>
 
-<input type="radio" name="q1" value="a"> Chennai<br>
-<input type="radio" name="q1" value="b"> Madurai<br>
-<input type="radio" name="q1" value="c"> Salem<br>
+<div class="options">
+<button onclick="checkAnswer('A')">A. Chennai</button>
+<button onclick="checkAnswer('B')">B. Madurai</button>
+<button onclick="checkAnswer('C')">C. Trichy</button>
+<button onclick="checkAnswer('D')">D. Salem</button>
+</div>
 
-<p>2. National Animal of India?</p>
-
-<input type="radio" name="q2" value="a"> Tiger<br>
-<input type="radio" name="q2" value="b"> Lion<br>
-<input type="radio" name="q2" value="c"> Elephant<br>
-
-<button type="submit">Submit Exam</button>
-
-</form>
+</div>
 
 </body>
 </html>
