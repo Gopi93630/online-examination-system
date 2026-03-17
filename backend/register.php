@@ -1,15 +1,17 @@
 <?php
-include 'config.php';
+include "db.php";
 
-$name=$_POST['name'];
-$email=$_POST['email'];
-$password=$_POST['password'];
+$name = $_POST['name'];
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-$sql="INSERT INTO users(name,email,password)
-VALUES('$name','$email','$password')";
+// Insert Query
+$sql = "INSERT INTO users(name,email,password) 
+        VALUES('$name','$email','$password')";
 
-$conn->query($sql);
-
-echo "Registration Successful";
-
+if(mysqli_query($conn, $sql)){
+    echo "<script>alert('Registration Successful'); window.location='../frontend/login.html';</script>";
+}else{
+    echo "Error: " . mysqli_error($conn);
+}
 ?>

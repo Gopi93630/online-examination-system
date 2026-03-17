@@ -1,22 +1,16 @@
 <?php
+include "db.php";
 
-include 'config.php';
+$email = $_POST['email'];
+$password = $_POST['password'];
 
-$email=$_POST['email'];
-$password=$_POST['password'];
+$sql = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+$result = mysqli_query($conn, $sql);
 
-$sql="SELECT * FROM users WHERE email='$email' AND password='$password'";
-
-$result=$conn->query($sql);
-
-if($result->num_rows>0){
-
-header("Location: ../exam.html");
-
+if(mysqli_num_rows($result) > 0){
+    echo "<script>alert('Login Success'); window.location='../frontend/dashboard.html';</script>";
 }else{
-
-echo "Login Failed";
-
+    echo "<script>alert('Invalid Login'); window.location='../frontend/login.html';</script>";
 }
 
 ?>
